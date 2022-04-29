@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DZViewElements</string>
+    <string name="person_name">Репин Дмитрий Алексеевич</string>
+    <string name="post">Инженер-технолог (2 категории)</string>
+    <string name="experience_value">Стаж работы: 5 лет</string>
+    <string name="achievements_block">Достижения</string>
+
+
+    <string name="contacts">Контакты</string>
+    <string name="contacts_vn">8888</string>
+    <string name="contacts_mob">89807720052</string>
+    <string name="contacts_mail">da.repin@tensor.ru</string>
+    <string name="contacts_tg">telegram</string>
+
+
+    <string name="date_person">Дата рождения: 1 мая</string>
+    <string name="city_person">Ярославль</string>
+
+
+    <string name="status_online">В сети</string>
+    <string name="status_offline">Не в сети</string>
+</resources>

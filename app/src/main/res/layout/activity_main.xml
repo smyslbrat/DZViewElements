@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_grad"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/photoPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            app:srcCompat="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/nameTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:fontFamily="@font/comforta"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="@string/person_name"
+            android:textColor="@color/color_font"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@+id/photoPerson"
+            app:layout_constraintEnd_toEndOf="@+id/photoPerson"
+            app:layout_constraintStart_toStartOf="@+id/photoPerson"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/postTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_grad"
+            android:fontFamily="@font/comforta"
+            android:gravity="center"
+            android:text="@string/post"
+            android:textColor="@color/color_font"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/nameTx"
+            app:layout_constraintStart_toStartOf="@+id/nameTx"
+            app:layout_constraintTop_toBottomOf="@+id/photoPerson" />
+
+        <TextView
+            android:id="@+id/experiencTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/back_grad"
+            android:fontFamily="@font/comforta"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="@string/experience_value"
+            android:textColor="@color/color_font_experience"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/postTx"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/postTx"
+            app:layout_constraintTop_toBottomOf="@+id/postTx" />
+
+        <TextView
+            android:id="@+id/achievementsTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/back_block"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/achievements_block"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/experiencTx"
+            app:layout_constraintStart_toStartOf="@+id/experiencTx"
+            app:layout_constraintTop_toBottomOf="@+id/experiencTx" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_block"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/achievementsTx"
+            app:layout_constraintTop_toBottomOf="@+id/achievementsTx">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/img_1" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/img_2" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/img" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/img_3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactsTx"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/back_block"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/contacts"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/contTxvn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_block"
+            android:drawableLeft="@drawable/ico_tel"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/contacts_vn"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/contactsTx"
+            app:layout_constraintStart_toStartOf="@+id/contactsTx"
+            app:layout_constraintTop_toBottomOf="@+id/contactsTx" />
+
+        <TextView
+            android:id="@+id/conTxmob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_block"
+            android:drawableLeft="@drawable/ico_mobile"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/contacts_mob"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/contTxvn"
+            app:layout_constraintStart_toStartOf="@+id/contTxvn"
+            app:layout_constraintTop_toBottomOf="@+id/contTxvn" />
+
+        <TextView
+            android:id="@+id/conTxmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_block"
+            android:drawableLeft="@drawable/ico_mail"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/contacts_mail"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/conTxmob"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/conTxmob"
+            app:layout_constraintTop_toBottomOf="@+id/conTxmob" />
+
+        <TextView
+            android:id="@+id/conTxtg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_block"
+            android:drawableLeft="@drawable/ico_telegram"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/contacts_tg"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/conTxmail"
+            app:layout_constraintStart_toStartOf="@+id/conTxmail"
+            app:layout_constraintTop_toBottomOf="@+id/conTxmail" />
+
+        <TextView
+            android:id="@+id/datePerson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/back_block"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/date_person"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/conTxtg"
+            app:layout_constraintTop_toBottomOf="@+id/conTxtg" />
+
+        <TextView
+            android:id="@+id/cityPerson"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/back_block"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/comforta"
+            android:paddingLeft="10dp"
+            android:text="@string/city_person"
+            android:textColor="@color/color_font_achievements"
+            android:textSize="18sp"
+            app:drawableLeftCompat="@drawable/ico_location"
+            app:layout_constraintEnd_toEndOf="@+id/datePerson"
+            app:layout_constraintStart_toStartOf="@+id/datePerson"
+            app:layout_constraintTop_toBottomOf="@+id/datePerson" />
+
+        <Button
+            android:id="@+id/btMessage"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ico_message"
+            app:iconSize="40dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/nameTx"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btCall"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ico_call"
+            app:iconSize="40dp"
+            app:iconTint="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/nameTx"
+            app:layout_constraintEnd_toStartOf="@+id/btMessage"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/status_online_color"
+            android:text="@string/status_online"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toTopOf="@+id/nameTx"
+            app:layout_constraintEnd_toStartOf="@+id/btCall"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
